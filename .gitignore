@@ -6,6 +6,7 @@ out/
 build/
 roku_modules
 source/globals.brs
+components/.DS_Store
 jellyfin-roku.zip
 # NPM 
 node_modules/
@@ -13,3 +14,4 @@ node_modules/
 .buildpath
 .project
 .settings
+.DS_Store

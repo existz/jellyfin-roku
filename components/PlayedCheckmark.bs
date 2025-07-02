@@ -32,7 +32,7 @@ sub onDataChange()
         unplayedCount = m.top.data.unplayedCount.ToStr()
         unplayedCountLength = len(unplayedCount)
 
-        m.unplayedNumber.font.size = unplayedCountLength = 4 ? 25 : 30
+        m.unplayedNumber.font.size = unplayedCountLength = 4 ? 16 : 22
 
         m.top.color = chainLookupReturn(m.global.session, "user.settings.colorPlayedCheckmarkBackground", ColorPalette.TRIADBLUE)
 

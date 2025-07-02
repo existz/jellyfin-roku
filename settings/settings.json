@@ -75,7 +75,7 @@
             "description": "The base background color for all screens in Jellyfin.",
             "settingName": "colorBackground",
             "type": "colorgrid",
-            "default": "#000018"
+            "default": "#0e0e0e"
           },
           {
             "title": "Primary Text",
@@ -96,7 +96,7 @@
             "description": "The highlight color for the cursor showing where the user's focus is.",
             "settingName": "colorCursor",
             "type": "colorgrid",
-            "default": "#FF6666"
+            "default": "#FFFFFF"
           },
           {
             "title": "What's New Author",
@@ -114,7 +114,7 @@
                 "description": "The background color of the check mark & unplayed count shown in the top right corner of items.",
                 "settingName": "colorPlayedCheckmarkBackground",
                 "type": "colorgrid",
-                "default": "#6666FF"
+                "default": "#010101"
               },
               {
                 "title": "Watched Check Mark",

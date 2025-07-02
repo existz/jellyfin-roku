@@ -31,11 +31,11 @@
           <LayoutGroup layoutDirection="vert" itemSpacings="[0]">
             <LayoutGroup layoutDirection="horiz" horizAlignment="left">
               <ScrollingText id="video_codec" vertAlign="bottom" height="39" maxwidth="990" font="font:SmallestSystemFont" color="#aaaaaa" />
-              <Text id="video_codec_count" font="font:smallestSystemFont" vertAlign="top" color="#aaaaaa" />
+              <Text id="video_codec_count" font="font:SmallestSystemFont" vertAlign="top" color="#aaaaaa" />
             </LayoutGroup>
             <LayoutGroup layoutDirection="horiz" horizAlignment="left">
               <ScrollingText id="audio_codec" vertAlign="bottom" height="39" maxwidth="990" font="font:SmallestSystemFont" color="#aaaaaa" />
-              <Text id="audio_codec_count" font="font:smallestSystemFont" vertAlign="top" color="#aaaaaa" />
+              <Text id="audio_codec_count" font="font:SmallestSystemFont" vertAlign="top" color="#aaaaaa" />
             </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
