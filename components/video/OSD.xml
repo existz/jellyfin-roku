@@ -6,9 +6,9 @@
     <LayoutGroup id="videoInfo" layoutDirection="vert" translation="[103,61]">
       <ScrollingText id="itemTitle" font="font:LargeBoldSystemFont" maxWidth="1400" />
       <LayoutGroup id="videoInfo" layoutDirection="horiz" translation="[103,61]">
-        <Text id="itemSeason" font="font:MediumSystemFont" color="0xffffffFF" />
-        <Text id="itemEpisode" font="font:MediumSystemFont" color="0xffffffFF" />
-        <Text id="itemEpisodeEnd" font="font:MediumSystemFont" color="0xffffffFF" />
+        <Text id="itemSeason" font="font:SmallSystemFont" color="0xffffffFF" />
+        <Text id="itemEpisode" font="font:SmallSystemFont" color="0xffffffFF" />
+        <Text id="itemEpisodeEnd" font="font:SmallSystemFont" color="0xffffffFF" />
       </LayoutGroup>
     </LayoutGroup>
 
@@ -68,9 +68,9 @@
       <Rectangle id="progressBar" width="0" height="8" />
     </Rectangle>
 
-    <Text id="videoPositionTime" font="font:MediumSystemFont" color="0xffffffFF" translation="[103,985]" />
-    <Text id="videoRemainingTime" font="font:MediumSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,985]" />
-    <Text id="videoEndingTime" font="font:SmallSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,915]" />
+    <Text id="videoPositionTime" font="font:SmallSystemFont" color="0xffffffFF" translation="[103,985]" />
+    <Text id="videoRemainingTime" font="font:SmallSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,985]" />
+    <Text id="videoEndingTime" font="font:SmallestSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,915]" />
 
     <Timer id="inactivityTimer" duration="1" repeat="true" />
   </children>

@@ -36,12 +36,12 @@
     <OSD id="osd" visible="false" inactiveTimeout="5" />
 
     <Rectangle id="chapterList" visible="false" color="0x00000098" width="400" height="380" translation="[103,210]">
-      <LabelList id="chaptermenu" itemSpacing="[0,20]" numRows="5" font="font:SmallSystemFont" itemSize="[315,40]" translation="[40,20]">
+      <LabelList id="chaptermenu" itemSpacing="[0,20]" numRows="5" font="font:SmallestSystemFont" itemSize="[315,40]" translation="[40,20]">
         <ContentNode id="chapterContent" role="content" />
       </LabelList>
     </Rectangle>
 
-    <Text id="videoEndingTime" font="font:SmallSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,900]" visible="false" />
+    <Text id="videoEndingTime" font="font:SmallestSystemFont" color="0xffffffFF" horizAlign="right" width="200" translation="[1617,900]" visible="false" />
 
     <StandardButton id="skipSegment" visible="false" height="85" width="250" translation="[1500, 900]" />
   </children>

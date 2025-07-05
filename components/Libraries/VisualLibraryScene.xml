@@ -25,11 +25,11 @@
 
     <LayoutGroup id="dropdownOptions" layoutDirection="horiz" translation="[100, 60]" itemSpacings="[15]">
       <LayoutGroup layoutDirection="vert" itemSpacings="[10]">
-        <Text font="font:SmallSystemFont" text="Search" />
+        <Text font="font:SmallestSystemFont" text="Search" />
         <Poster id="voiceBoxBackground" uri="pkg:/images/white.9.png" blendColor="#FFFFFF" height="75" width="335">
           <VoiceTextEditBox
             id="voiceBox"
-            fontUri="font:SmallSystemFont"
+            fontUri="font:SmallestSystemFont"
             maxTextLength="75"
             height="75"
             fontSize="28"
@@ -42,7 +42,7 @@
         </Poster>
       </LayoutGroup>
       <LayoutGroup layoutDirection="vert" itemSpacings="[10]">
-        <Text id="sortLabel" font="font:SmallSystemFont" text="Sort By" />
+        <Text id="sortLabel" font="font:SmallestSystemFont" text="Sort By" />
         <TextButton
           id="sortButton"
           iconSide="right"
@@ -55,7 +55,7 @@
           width="335" />
       </LayoutGroup>
       <LayoutGroup layoutDirection="vert" itemSpacings="[10]">
-        <Text id="sortOrderLabel" font="font:SmallSystemFont" text="Sort Order" />
+        <Text id="sortOrderLabel" font="font:SmallestSystemFont" text="Sort Order" />
         <TextButton
           id="sortOrderButton"
           iconSide="right"
@@ -68,7 +68,7 @@
           width="335" />
       </LayoutGroup>
       <LayoutGroup layoutDirection="vert" itemSpacings="[10]">
-        <Text id="filterLabel" font="font:SmallSystemFont" text="Filter" />
+        <Text id="filterLabel" font="font:SmallestSystemFont" text="Filter" />
         <TextButton
           id="filterButton"
           iconSide="right"
@@ -81,7 +81,7 @@
           width="335" />
       </LayoutGroup>
       <LayoutGroup layoutDirection="vert" itemSpacings="[10]">
-        <Text id="viewLabel" font="font:SmallSystemFont" text="View" />
+        <Text id="viewLabel" font="font:SmallestSystemFont" text="View" />
         <TextButton
           id="viewButton"
           iconSide="right"

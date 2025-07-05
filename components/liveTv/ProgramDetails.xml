@@ -25,8 +25,8 @@
                             <Poster id="isRepeatBackground" uri="pkg:/images/white.9.png" blendColor="#009688" />
                             <Text id="isRepeatText" text="Repeat" font="font:SmallestBoldSystemFont" translation="[8,4]" />
                         </Group>
-                        <Text id="episodeNumber" font="font:SmallSystemFont" />
-                        <Text id="episodeTitle" font="font:SmallSystemFont" />
+                        <Text id="episodeNumber" font="font:SmallestSystemFont" />
+                        <Text id="episodeTitle" font="font:SmallestSystemFont" />
                     </LayoutGroup>
 
                     <LayoutGroup layoutDirection="horiz" itemSpacings="[30]">
@@ -67,7 +67,7 @@
         <!-- When no schedule information to display  -->
         <LayoutGroup id="noInformation" translation="[96, 300]">
             <Text id="noInfoChannelName" font="font:LargeBoldSystemFont" />
-            <Text font="font:SmallSystemFont" text="No schedule information" />
+            <Text font="font:SmallestSystemFont" text="No schedule information" />
         </LayoutGroup>
         <Animation id="focusAnimation" duration="0.66" repeat="false" easeFunction="linear">
             <FloatFieldInterpolator id="viewChannelFocusAnimationOpacity" key="[0.0, 1]" fieldToInterp="viewChannelButton.opacity" />

@@ -8,7 +8,7 @@
     <LabelList
       translation="[120, 250]"
       id="settingsMenu"
-      font="font:SmallSystemFont"
+      font="font:SmallestSystemFont"
       itemSize="[510, 54]"
       itemSpacing="[0,10]"
       numRows="11"

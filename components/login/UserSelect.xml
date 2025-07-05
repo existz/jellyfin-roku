@@ -6,7 +6,7 @@
         id="unhideUserHeader"
         text="Unhide Users"
         horizAlign="left"
-        font="font:MediumSystemFont"
+        font="font:SmallSystemFont"
         height="100"
         width="400"
         translation="[120, 120]" />
