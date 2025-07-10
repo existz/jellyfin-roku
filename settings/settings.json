@@ -144,7 +144,7 @@
             "description": "The highlight color for the cursor showing where the user's focus is.",
             "settingName": "colorCursor",
             "type": "colorgrid",
-            "default": "#FFFFFF"
+            "default": "#0096dc"
           },
           {
             "title": "Watched Check Mark & Unplayed Count",
