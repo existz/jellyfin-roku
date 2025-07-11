@@ -49,18 +49,41 @@ function fetchRandomMovieBackdrop() as string
             end if
         end for
         
-        if isValidAndNotEmpty(moviesWithBackdrops)
-            randomIndex = Rnd(moviesWithBackdrops.Count()) - 1
-            randomMovie = moviesWithBackdrops[randomIndex]
-            firstBackdropTag = randomMovie.BackdropImageTags[0]
-            backdropURL = ImageURL(randomMovie.Id, "Backdrop", {
-                "Tag": firstBackdropTag,
-                "maxWidth": 1920,
-                "maxHeight": 1200
-            })
-            m.top.backdropURL = backdropURL
-            return backdropURL
+    if isValidAndNotEmpty(moviesWithBackdrops)
+        randomIndex = Rnd(moviesWithBackdrops.Count()) - 1
+        randomMovie = moviesWithBackdrops[randomIndex]
+        firstBackdropTag = randomMovie.BackdropImageTags[0]
+        backdropURL = ImageURL(randomMovie.Id, "Backdrop", {
+            "Tag": firstBackdropTag,
+            "maxWidth": 1920,
+            "maxHeight": 1200
+        })
+
+        ' Local cache path
+        cacheDir = "tmp:/backdrops/"
+        cacheFile = cacheDir + randomMovie.Id + "_" + firstBackdropTag + ".jpg"
+        fs = CreateObject("roFileSystem")
+        if not fs.Exists(cacheDir)
+            fs.CreateDirectory(cacheDir)
         end if
+
+        if fs.Exists(cacheFile)
+            ' Use cached image
+            m.top.backdropURL = cacheFile
+            return cacheFile
+        else
+            ' Download and cache image
+            http = CreateObject("roUrlTransfer")
+            http.SetUrl(backdropURL)
+            if http.GetToFile(cacheFile)
+                m.top.backdropURL = cacheFile
+                return cacheFile
+            else
+                m.top.backdropURL = backdropURL
+                return backdropURL
+            end if
+        end if
+    end if
     end if
     
     ' Return empty string if no backdrop found
